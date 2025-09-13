@@ -4,7 +4,7 @@ public:
     int maxFreqSum(string s) {
         
         int a,e,i,o,u;
-        vector<int> con(1000,0);
+        vector<int> con(256,0);
         a=e=i=o=u=0;
         for (int k=0;k<s.length();k++){
             
