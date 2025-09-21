@@ -1,8 +1,10 @@
 class Solution {
 public:
     int findClosest(int x, int y, int z) {
-        if (abs(z-x)>abs(z-y)) return 2;
-        else if (abs(z-x)<abs(z-y)) return 1;
-        else return 0;
+        int n1= abs(z-x);
+        int n2= abs(z-y);
+        if (n1>n2) return 2;
+        if (n2>n1) return 1;
+        return 0;
     }
 };
